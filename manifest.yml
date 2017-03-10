@@ -1,0 +1,13 @@
+applications:
+- path: .
+  memory: 256M
+  instances: 1
+  domain: mybluemix.net
+  name: InventoryApp
+  host: inventoryapp
+  disk_quota: 1024M
+  services:
+  - Secure Gateway-ie
+  - InventoryAPI-9v
+  - Object Storage-ba
+  - New Relic
